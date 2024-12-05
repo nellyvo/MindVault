@@ -41,35 +41,38 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Révélation du secret
-    function revealSecret() {
-        audio.play(); // Joue l'effet sonore
-        avaSecretContainer.classList.remove("hidden");
+// Révélation du secret
+function revealSecret() {
+    audio.play(); // Joue l'effet sonore
+    avaSecretContainer.classList.remove("hidden");
 
-        // Animation de fond lumineux
-        document.body.classList.add("reveal-background");
+    // Animation de fond lumineux
+    document.body.classList.add("reveal-background");
 
-        // Texte à révéler
-        const secret = `Ava worked tirelessly for the Mind Vault project. Her goal was to eliminate trauma and advance 
-        the project for humanity's benefit. But she uncovered a sinister truth: the government wanted to misuse the 
-        technology. To silence her, they erased her memory.`;
+    // Texte à révéler
+    const secret =
+        `Ava's past is not only linked to the Mind Vault, it's an integral part of its creation. 
+        But as Hayden reassembles the fragments, another truth emerges that changes everything. 
+        Memories reveal that Ava's involvement stopped the moment she realized the system was being armed. 
+        Her attempts to stop it led to her own downfall, as the government erased her memories to ensure her silence.`;
 
-        secretText.textContent = ""; // Réinitialise le texte
-        const words = secret.split(" ");
-        let index = 0;
+    // Réinitialisation du texte
+    secretText.textContent = ""; // Utilise correctement l'élément DOM ici
+    const words = secret.split(" ");
+    let index = 0;
 
-        const interval = setInterval(() => {
-            if (index < words.length) {
-                secretText.textContent += words[index] + " ";
-                index++;
-            } else {
-                clearInterval(interval); // Fin de l'animation
-            }
-        }, 100); // Chaque mot apparaît toutes les 100ms
+    const interval = setInterval(() => {
+        if (index < words.length) {
+            secretText.textContent += words[index] + " ";
+            index++;
+        } else {
+            clearInterval(interval); // Fin de l'animation
+        }
+    }, 100); // Chaque mot apparaît toutes les 100ms
 
-        // Supprime l'effet de fond lumineux après 5 secondes
-        setTimeout(() => {
-            document.body.classList.remove("reveal-background");
-        }, 5000);
-    }
+    // Supprime l'effet de fond lumineux après 5 secondes
+    setTimeout(() => {
+        document.body.classList.remove("reveal-background");
+    }, 5000);
+}
 });

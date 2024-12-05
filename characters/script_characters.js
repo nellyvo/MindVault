@@ -9,11 +9,6 @@ const characters = {
         description: "Ava is mysterious and highly skilled, familiar with the workings of government systems. She’s motivated by revenge against the government, which erased parts of her memory. While she helps Aiden access secret databases, her trust in him is cautious. Her past and motives add layers of complexity to her character.",
         image: "../images/Ava.jpeg"
     },
-    marcus: {
-        name: "Marcus Royce",
-        description: "As the main antagonist, Marcus is a loyal enforcer of the memory control program. He works from the shadows, maintaining order through intimidation. Throughout the story, he experiences flashes of doubt about his loyalty and the ethics of his actions, adding depth to his character as he hunts Aiden and Ava.",
-        image: "../images/Marcus.jpg"
-    },
     eleanor: {
         name: "Dr. Eleanor Graves",
         description: "Dr. Eleanor Graves is the brilliant but conflicted scientist who created the Mind Vault system. A visionary in the field of memory preservation, Eleanor conceived the system as a tool for immortalizing humanity's most precious memories. However, her idealistic vision was corrupted by government officials who turned the technology into a weapon of control and manipulation. Over the years, Eleanor has lost her illusions, trapped in the shadow of her own creation. Now under intense scrutiny, she secretly seeks redemption by helping Hayden and Ava in their quest to uncover the truth.",
