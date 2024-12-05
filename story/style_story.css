@@ -19,7 +19,7 @@ header {
 
 .logo {
     font-size: 2em;
-    color: #00ffff;
+    color: #ff7eb3;
     font-weight: bold;
 }
 
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00ffff;
+    color: #ff7eb3;
 }
 
 /* Main Content */
@@ -129,7 +129,7 @@ main {
 }
 
 button {
-    background: #00ffff;
+    background: #ff7eb3;
     color: #000000;
     border: none;
     padding: 10px 20px;
@@ -145,7 +145,7 @@ button:hover {
 }
 
 .about-button {
-    background: linear-gradient(45deg, #00fff6, #00ffb3);
+    background: linear-gradient(45deg,#007eb3, #ff7eb3);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     color: #000;
@@ -154,7 +154,7 @@ button:hover {
 }
 
 .about-button:hover {
-    background: linear-gradient(45deg, #ff7eb3, #ff00ff);
+    background: linear-gradient(45deg, #ff7eb3, #00ffb3);
     color: #fff;
     transform: scale(1.1);
 }
@@ -170,7 +170,7 @@ button:hover {
 }
 
 #characters-link button {
-    background: linear-gradient(135deg, #00ffff, #0088ff);
+    background: linear-gradient(135deg, #007eb3, #ff7eb3);
     color: white;
     font-size: 1.5em;
     font-weight: bold;
@@ -188,3 +188,10 @@ button:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+#story-intro {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 20px auto;
+}

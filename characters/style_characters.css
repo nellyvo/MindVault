@@ -17,7 +17,7 @@ header {
 
 .logo {
     font-size: 2em;
-    color: #00ffff;
+    color: #ff7eb3;
     font-weight: bold;
 }
 
@@ -146,12 +146,11 @@ nav ul li a:hover {
 }
 
 .slider-container::-webkit-scrollbar {
-    display: none; /* Cache la barre de défilement */
+    display: none;
 }
 
-/* Character Card */
 .character-card {
-    flex: 0 0 auto; /* Assure le glissement horizontal */
+    flex: 0 0 auto; 
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 20px;
@@ -162,14 +161,16 @@ nav ul li a:hover {
 }
 
 .about-button {
-    background: #00fff6;
+    background: linear-gradient(45deg,#007eb3, #ff7eb3);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     color: #000;
-    transition: background 0.3s;
-  }
-  
-  .about-button:hover {
-    background: #ff7eb3;
+    font-weight: bold;
+    transition: background 0.5s ease, transform 0.3s ease;
+}
+
+.about-button:hover {
+    background: linear-gradient(45deg, #ff7eb3, #00ffb3);
     color: #fff;
-  }
+    transform: scale(1.1);
+}
