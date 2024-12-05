@@ -1,0 +1,190 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #1e1e2f, #243b55);
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 2em;
+    color: #00ffff;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ffff;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Chapters */
+.chapter {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.chapter:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Hidden Sections */
+.hidden {
+    display: none;
+}
+
+/* Characters Section */
+#characters {
+    margin-top: 50px;
+}
+
+.character-card {
+    background: rgba(255, 255, 255, 0.1);
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.character-card:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal */
+#character-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#character-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: #ffffff;
+    color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+button {
+    background: #00ffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff00ff;
+    color: #ffffff;
+}
+
+.about-button {
+    background: linear-gradient(45deg, #00fff6, #00ffb3);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #000;
+    font-weight: bold;
+    transition: background 0.5s ease, transform 0.3s ease;
+}
+
+.about-button:hover {
+    background: linear-gradient(45deg, #ff7eb3, #ff00ff);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Button Container */
+#characters-link {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#characters-link .button-container {
+    display: inline-block;
+}
+
+#characters-link button {
+    background: linear-gradient(135deg, #00ffff, #0088ff);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#characters-link button:hover {
+    background: linear-gradient(135deg, #ff00ff, #ff7eb3);
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+

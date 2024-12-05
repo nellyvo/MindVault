@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_story.css">
+    <title>Mind Vault: Hayden's Journey</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">MIND VAULT</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="../characters/characters.html">Characters</a></li>
+                <li><a href="#about" class="about-button">About</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="story-intro">
+            <h1>THE STORY</h1>
+            <p>In a dystopian world where memories can be manipulated and controlled, Hayden embarks on a mission to uncover the truth.</p>
+        </section>
+
+        <section id="characters-link">
+          <div class="button-container">
+              <button onclick="window.location.href='../characters/characters.html'">
+                  Meet the Characters
+              </button>
+          </div>
+
+        <!-- Chapters Section -->
+        <section id="chapters">
+            <div class="chapter" onclick="window.location.href='../chapters/chapter1.html'">
+                <h2>Chapter 1: The Discovery</h2>
+                <p>Hayden uncovers a suppressed memory that hints at a conspiracy...</p>
+            </div>
+            <div class="chapter hidden" id="chapter-1-details">
+                <h3>The Discovery</h3>
+                <p>
+                    While exploring the global memory vault, Hayden stumbles upon a memory fragment that wasn't meant to exist. 
+                    The memory reveals a hidden crime involving high-ranking officials, setting Hayden on a dangerous path of resistance.
+                </p>
+                <button onclick="hideDetails('chapter-1-details')">Close</button>
+            </div>
+
+            <div class="chapter" onclick="window.location.href='../chapters/chapter2.html'">
+              <h2>Chapter 2: The Alliance</h2>
+                <p>Teaming up with Ava Carter, Hayden dives deeper into the mystery...</p>
+            </div>
+            <div class="chapter hidden" id="chapter-2-details">
+                <h3>The Alliance</h3>
+                <p>
+                    Ava Carter, a skilled hacker, joins Hayden in uncovering the government's manipulation of memories. Together, 
+                    they face obstacles as the regime tries to silence them.
+                </p>
+                <button onclick="hideDetails('chapter-2-details')">Close</button>
+            </div>
+
+            <div class="chapter" onclick="window.location.href='../chapters/chapter3.html'">
+              <h2>Chapter 3: The Final Stand</h2>
+                <p>Hayden and Ava risk it all to reveal the truth...</p>
+            </div>
+            <div class="chapter hidden" id="chapter-3-details">
+                <h3>The Final Stand</h3>
+                <p>
+                    Risking their lives, Hayden and Ava infiltrate the central memory hub, exposing the regime's manipulation. Their actions 
+                    ignite a revolution that changes the course of humanity.
+                </p>
+                <button onclick="hideDetails('chapter-3-details')">Close</button>
+            </div>
+        </section>
+      </section>
+
+    </main>
+    <script src="script_story.js"></script>
+</body>
+</html>

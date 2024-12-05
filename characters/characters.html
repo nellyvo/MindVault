@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_characters.css">
+    <title>Characters</title>
+</head>
+<body>
+    <header>
+        <div class="logo">MIND VAULT</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../story/story.html">Story</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="#about" class="about-button">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="characters">
+            <h1>Meet the Characters</h1>
+            <div class="slider-container">
+                <div class="character-card" onclick="showCharacterModal('aiden')">
+                    <div class="character-image">
+                        <img src="../images/Hayden.jpg" alt="Aiden">
+                    </div>
+                    <div class="character-info">
+                        <h2>Aiden “Cipher” Hayes</h2>
+                        <p>A young, intelligent hacker...</p>
+                    </div>
+                </div>
+                <div class="character-card" onclick="showCharacterModal('ava')">
+                    <div class="character-image">
+                        <img src="../images/Ava.jpeg" alt="Ava">
+                    </div>
+                    <div class="character-info">
+                        <h2>Ava “Ghost” Carter</h2>
+                        <p>A mysterious and skilled ally...</p>
+                    </div>
+                </div>
+                <div class="character-card" onclick="showCharacterModal('marcus')">
+                    <div class="character-image">
+                        <img src="../images/Marcus.jpg" alt="Marcus">
+                    </div>
+                    <div class="character-info">
+                        <h2>Marcus Royce</h2>
+                        <p>A loyal enforcer with doubts...</p>
+                    </div>
+                </div>
+                <div class="character-card" onclick="showCharacterModal('eleanor')">
+                    <div class="character-image">
+                        <img src="../images/Eleanor.jpg" alt="Eleanor">
+                    </div>
+                    <div class="character-info">
+                        <h2>Dr. Eleanor Graves</h2>
+                        <p>The scientist behind Mind Vault...</p>
+                    </div>
+                </div>
+                <div class="character-card" onclick="showCharacterModal('ethan')">
+                    <div class="character-image">
+                        <img src="../images/Ethan.jpg" alt="Ethan">
+                    </div>
+                    <div class="character-info">
+                        <h2>Ethan Cross</h2>
+                        <p>An ex-agent with a troubled past...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Modal -->
+        <div id="character-modal" class="hidden">
+            <div class="modal-content">
+                <span class="close" onclick="hideCharacterModal()">&times;</span>
+                <h2 id="character-name"></h2>
+                <img id="character-image" src="" alt="Character Image">
+                <p id="character-description"></p>
+            </div>
+        </div>
+    </main>
+    <script src="script_characters.js"></script>
+</body>
+</html>

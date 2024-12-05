@@ -1,0 +1,177 @@
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #00ffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    font-size: 1.1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ffff;
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column; /* Force un alignement vertical */
+    justify-content: flex-start; /* Aligne en haut */
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Chapter Summary Container */
+#chapter-summary {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 20px auto; /* Centrer avec espacement */
+}
+
+#chapter-summary h1 {
+    font-size: 2.5em;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+#chapter-summary p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Button Styling */
+button {
+    background: #00ffff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff7eb3;
+    color: white;
+}
+
+.about-button {
+    background: #00fff6;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #000;
+    transition: background 0.3s;
+}
+
+.about-button:hover {
+    background: #ff7eb3;
+    color: #fff;
+}
+
+/* Enigmas Section Styling */
+#enigmas {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #243b55, #141e30);
+    color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#enigmas h2 {
+    font-size: 2em;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+#enigmas p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.enigmas-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.enigmas-buttons button {
+    background: #00ffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #141e30;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enigmas-buttons button:hover {
+    background: #ff00ff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Animation Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to the enigmas section */
+#enigmas {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* General Section Spacing */
+section {
+    display: block;
+    margin-bottom: 50px; /* Espacement entre les sections */
+}

@@ -1,0 +1,296 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c47, #42275a, #734b6d);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  color: #00fff6;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #00fff6;
+}
+
+.about-button {
+  background: #00fff6;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: #000;
+  transition: background 0.3s;
+}
+
+.about-button:hover {
+  background: #ff7eb3;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('hero-image.jpg') no-repeat center center/cover;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 15px rgba(0, 255, 246, 0.7);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.discover-button {
+  background: #00fff6;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.discover-button:hover {
+  background: #ff7eb3;
+  transform: scale(1.1);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: -80px;
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #00fff6;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 255, 246, 0.5);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Background GIF */
+.gif-background {
+  position: relative;
+  min-height: 100vh;
+  background: url('./images/IA.gif') no-repeat center center/cover; /* Remplace IA.gif par le chemin vers ton fichier GIF */
+  overflow: hidden;
+}
+
+/* Overlay for better text readability */
+.gif-background:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Ajoute un léger filtre sombre */
+  z-index: 1;
+}
+
+/* Positioning content above the GIF */
+header, .hero, .features, footer {
+  position: relative;
+  z-index: 2; /* Assure que le contenu reste visible au-dessus du GIF */
+}
+
+/* General Content Styling */
+.hero-content {
+  text-align: center;
+  padding-top: 20%;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.feature-card img, .feature-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* General Page Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #1e1e30, #2a4a5f);
+  color: #ffffff;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2em;
+  color: #00ffff;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+}
+
+/* Characters Slider */
+#characters {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#characters h1 {
+  font-size: 2.5em;
+  color: #00ffff;
+  margin-bottom: 30px;
+}
+
+.slider-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.slider-container:active {
+  cursor: grabbing;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.character-card {
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.character-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.character-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.character-card h3 {
+  font-size: 1.5em;
+  color: #00ffff;
+}
+
+.character-card p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.8);
+}

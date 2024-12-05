@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Vault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Container -->
+  <div class="gif-background">
+    <!-- Navigation Bar -->
+    <header>
+      <div class="logo">MIND VAULT</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a onclick="window.location.href='story/story.html'" href="#story" >Story</a></li>
+          <li><a href="characters/characters.html">Characters</a></li>
+          <li><a href="#about" class="about-button">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to the Future</h1>
+        <p>Explore the power of technology to preserve and relive your memories.</p>
+        <button class="discover-button" onclick="window.location.href='./story/story.html'">Discover Hayden's Story</button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="memories" class="features">
+      <div class="feature-card">
+        <img src="./images/image1.jpg" alt="Memory 1">
+        <h3>Memory 1</h3>
+        <p>Relive the moment that changed everything.</p>
+      </div>
+      <div class="feature-card">
+        <img src="./images/image2.jpeg" alt="Memory 2">
+        <h3>Memory 2</h3>
+        <p>Explore your past with stunning clarity.</p>
+      </div>
+      <div class="feature-card">
+        <video autoplay loop muted>
+          <source src="./images/video1.mp4" type="video/mp4">
+        </video>
+        <h3>Memory 3</h3>
+        <p>A moment frozen in time.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Mind Vault. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
